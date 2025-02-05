@@ -1,0 +1,18 @@
+.VinminSpan {
+  font-family: "Albert Sans", sans-serif;
+}
+
+.VinminSpanPrimary {
+  color: var(--vinmin-primary-text-color);
+  font-size: 18px;
+}
+
+.VinminSpanSecondary {
+  color: var(--vinmin-secondary-text-color);
+  font-size: 18px;
+}
+
+.VinminSpanTertiary {
+  color: var(--vinmin-secondary-text-color);
+  font-size: 16px;
+}

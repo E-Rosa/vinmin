@@ -1,0 +1,18 @@
+.VinminP {
+  font-family: "Albert Sans", sans-serif;
+}
+
+.VinminPPrimary {
+  color: var(--vinmin-primary-text-color);
+  font-size: 18px;
+}
+
+.VinminPSecondary {
+  color: var(--vinmin-secondary-text-color);
+  font-size: 18px;
+}
+
+.VinminPTertiary {
+  color: var(--vinmin-secondary-text-color);
+  font-size: 16px;
+}

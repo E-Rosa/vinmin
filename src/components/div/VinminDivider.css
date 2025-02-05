@@ -1,0 +1,18 @@
+.VinminDividerContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.VinminDividerLine {
+  border: 1px solid;
+  width: 100%;
+}
+
+.VinminDividerDecorator {
+  width: 2em;
+  height: 1em;
+  margin: 0px 0.5em;
+  background-color: #000000;
+  transform: scale(60%) rotate(45deg);
+}

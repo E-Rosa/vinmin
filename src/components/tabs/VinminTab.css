@@ -1,0 +1,22 @@
+.VinminTab {
+  min-width: 3em;
+  height: 3em;
+  padding: 0.3em 1em;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.VinminTab:active, .VinminTab:hover{
+  opacity: .9;
+}
+
+.VinminTabActive {
+  background-color: black;
+}
+
+.VinminTabInactive {
+  background-color: white;
+}

@@ -1,0 +1,14 @@
+.VinminDemoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: fit-content;
+}
+
+.VinminIcon {
+  max-width: 36px;
+  max-height:36px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}

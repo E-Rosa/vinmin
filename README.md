@@ -1,0 +1,2 @@
+# Vinmin - Vintage Minimalistic React Function Components
+A package of limited function components that follow a "vintage minimalistic" style. This library was originally made to be used in my React Query course on Udemy, as well as other courses and generally others apps that might make use of this limited array of stylized components.

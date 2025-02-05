@@ -1,0 +1,17 @@
+.VinminButton {
+  padding: 1em 2.5em;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  border: 0;
+}
+
+.VinminButtonBlack {
+  background-color: #000000;
+  color: var(--vinmin-white-text);
+  border: 1px solid transparent;
+}
+
+.VinminButtonWhiteBordered {
+    border: 1px solid var(--vinmin-primary-text-color);
+    background-color: white;
+}

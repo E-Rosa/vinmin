@@ -1,0 +1,24 @@
+.VinminPaginationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid var(--vinmin-primary-text-color);
+  font-family: "Alegreya", serif;
+  color: var(--vinmin-primary-text-color);
+  cursor: pointer;
+}
+
+.VinminPaginationButtonActive {
+  background-color: var(--vinmin-primary-text-color);
+  color: white;
+}
+
+.VinminPaginationButton:active {
+  background-color: var(--vinmin-primary-text-color);
+  color: white;
+}
