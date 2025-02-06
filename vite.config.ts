@@ -1,15 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
   build: {
     lib: {
-      entry: ["src/main.tsx"], // Adjust path to your entry file
+      entry: ["src/entry.ts"], // Adjust path to your entry file
       name: "Vinmin",
-      formats: ["es", "cjs"], // Generate both ESM and CommonJS
-      fileName: (format) => `vinmin.${format}.js`,
+      formats: ["es"], // Generate both ESM and CommonJS
+      fileName: "vinmin"
     },
     rollupOptions: {
       external: ["react", "react-dom"], // Prevent bundling React (important!)
@@ -21,4 +20,12 @@ export default defineConfig({
       },
     },
   },
-})
+  plugins: [
+    dts({
+      rollupTypes: true,
+      tsconfigPath: "./tsconfig.app.json",
+      insertTypesEntry: true,
+      copyDtsFiles: true, // Ensures all .d.ts files are included
+    }),
+  ],
+});
