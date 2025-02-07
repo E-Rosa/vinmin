@@ -1,3 +1,4 @@
+import "./index.css"
 import VinminP from "./components/text/VinminP";
 import VinminH1 from "./components/text/heading/VinminH1";
 import VinminButton from "./components/button/VinminButton";
