@@ -12,6 +12,7 @@
 }
 
 .VinminButtonWhiteBordered {
-    border: 1px solid var(--vinmin-primary-text-color);
-    background-color: white;
+  border: 1px solid var(--vinmin-primary-text-color);
+  background-color: white;
+  color: var(--vinmin-primary-text-color);
 }
