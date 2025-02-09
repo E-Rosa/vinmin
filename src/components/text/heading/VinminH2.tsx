@@ -9,7 +9,7 @@ interface VinminH2Props {
 }
 
 function VinminH2(props: VinminH2Props) {
-  return <h1 {...props} className={`VinminH2 ${props.attributes?.className}`}>{props.children}</h1>;
+  return <h1 {...props.attributes} className={`VinminH2 ${props.attributes?.className}`}>{props.children}</h1>;
 }
 
 export default VinminH2;

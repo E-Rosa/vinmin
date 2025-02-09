@@ -10,7 +10,7 @@ interface VinminH1Props {
 
 function VinminH1(props: VinminH1Props) {
   return (
-    <h1 {...props} className={`VinminH1 ${props.attributes?.className}`}>
+    <h1 {...props.attributes} className={`VinminH1 ${props.attributes?.className}`}>
       {props.children}
     </h1>
   );
