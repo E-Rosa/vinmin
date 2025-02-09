@@ -5,10 +5,11 @@ interface VinminH2Props {
     React.HTMLAttributes<HTMLHeadingElement>,
     HTMLHeadingElement
   >;
+  children?: JSX.Element | string;
 }
 
 function VinminH2(props: VinminH2Props) {
-  return <h1 {...props} className={`VinminH2 ${props.attributes?.className}`}></h1>;
+  return <h1 {...props} className={`VinminH2 ${props.attributes?.className}`}>{props.children}</h1>;
 }
 
 export default VinminH2;
