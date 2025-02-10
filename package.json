@@ -1,6 +1,6 @@
 {
   "name": "@eliasrrosa/vinmin",
-  "version": "0.0.20",
+  "version": "0.0.22",
   "type": "module",
   "access": "public",
   "main": "dist/vinmin.js",

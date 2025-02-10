@@ -1,4 +1,4 @@
-/* import "./Demo.css";
+import "./Demo.css";
 import VinminButton from "../button/VinminButton";
 import VinminDivider from "../div/VinminDivider";
 import VinminInput from "../input/VinminInput";
@@ -75,4 +75,3 @@ function Demo() {
 }
 
 export default Demo;
- */

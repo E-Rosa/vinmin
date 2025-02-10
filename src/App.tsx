@@ -1,12 +1,11 @@
-import './App.css'
-import './fonts.css';
+import Demo from "./components/demo/Demo";
 
 function App() {
-
   return (
     <>
+      <Demo />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
