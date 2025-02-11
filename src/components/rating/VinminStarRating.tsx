@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./VinminStarRating.css";
 import VinminStar from "./VinminStar";
 
 interface VinminStarRatingProps {
-  defaultFilledStarsCount: number;
+  filledStarsCount: number;
   isEditable?: boolean;
   attributes?: React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
@@ -18,7 +18,7 @@ function VinminStarRating(props: VinminStarRatingProps) {
   const starsCount = 5;
 
   const [filledStarsCount, setFilledStarsCount] = useState(
-    props.defaultFilledStarsCount
+    props.filledStarsCount
   );
 
   const unfilledStarsCount = starsCount - filledStarsCount;
@@ -46,6 +46,10 @@ function VinminStarRating(props: VinminStarRatingProps) {
     const filledStarsCount = starIndex + 1;
     setFilledStarsCount(filledStarsCount);
   };
+
+  useEffect(()=>{
+    setFilledStarsCount(props.filledStarsCount)
+  }, [props.filledStarsCount])
 
   return (
     <div

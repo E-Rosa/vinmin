@@ -42,7 +42,7 @@ function Demo() {
         placeholder="placeholder text"
       ></VinminInput>
       <VinminDivider />
-      <VinminStarRating defaultFilledStarsCount={1} />
+      <VinminStarRating filledStarsCount={1} />
       <PaginationDemo />
       <VinminTabs
         tabs={[
