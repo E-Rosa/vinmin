@@ -8,6 +8,7 @@ interface VinminPaginationProps {
   offset: number;
   onPageClick?: (opts: { offset: number; itemsPerPage: number }) => void;
   maximumPagesToDisplay?: number;
+  className?: string;
 }
 
 function VinminPagination(props: VinminPaginationProps) {
@@ -58,7 +59,7 @@ function VinminPagination(props: VinminPaginationProps) {
     .filter((value) => value != undefined);
 
   return (
-    <div className="VinminPaginationContainer">
+    <div className={`VinminPaginationContainer ${props.className}`}>
       {pages.map((pageNumber) => (
         <VinminPaginationButton
           key={pageNumber}
