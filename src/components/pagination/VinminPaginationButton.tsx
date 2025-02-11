@@ -11,6 +11,7 @@ function VinminPaginationButton(props: VinminPaginationButtonProps) {
       className={`VinminPaginationButton ${
         props.isActive ? "VinminPaginationButtonActive" : ""
       }`}
+      onClick={props.onClick}
     >
       {props.children}
     </button>
