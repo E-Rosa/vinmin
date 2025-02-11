@@ -10,9 +10,9 @@
 }
 
 .VinminDividerDecorator {
-  min-width: 12px;
-  height: 12px;
-  margin: 0px 0.5em;
+  min-width: 10px;
+  height: 10px;
+  margin: 0px 1em;
   background-color: #000000;
   transform: rotate(45deg);
 }
