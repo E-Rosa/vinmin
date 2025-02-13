@@ -8,16 +8,19 @@ interface VinminInputProps {
     React.HTMLAttributes<HTMLInputElement>,
     HTMLInputElement
   >;
+  containerClassName?: string;
+  labelClassName?: string;
+  inputClassName?: string;
 }
 
 function VinminInput(props: VinminInputProps) {
   return (
-    <div className="VinminInputContainer">
-      <VinminSpan>{props.label}</VinminSpan>
+    <div className={`VinminInputContainer ${props.containerClassName}`}>
+      <VinminSpan className={props.labelClassName}>{props.label}</VinminSpan>
       <input
         {...props.attributes}
         placeholder={props.placeholder}
-        className="VinminInput"
+        className={`VinminInput ${props.inputClassName}`}
       ></input>
     </div>
   );
