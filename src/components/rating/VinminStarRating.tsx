@@ -4,17 +4,16 @@ import VinminStar from "./VinminStar";
 
 interface VinminStarRatingProps {
   filledStarsCount: number;
-  isEditable?: boolean;
   attributes?: React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
   >;
   className?: string;
+  onStarClick?: (rating: number) => void;
 }
 
 function VinminStarRating(props: VinminStarRatingProps) {
-  const isEditable = props.isEditable === false ? false : true;
-
+  const isEditable = props.onStarClick ? true : false;
   const starsCount = 5;
 
   const [filledStarsCount, setFilledStarsCount] = useState(
@@ -34,7 +33,10 @@ function VinminStarRating(props: VinminStarRatingProps) {
           isFilled={isFilled}
           attributes={{
             onClick: () => {
-              handleStarClick(index);
+              if(isEditable){
+                handleStarClick(index);
+                props.onStarClick?.(index + 1);
+              }
             },
           }}
         />
@@ -47,9 +49,9 @@ function VinminStarRating(props: VinminStarRatingProps) {
     setFilledStarsCount(filledStarsCount);
   };
 
-  useEffect(()=>{
-    setFilledStarsCount(props.filledStarsCount)
-  }, [props.filledStarsCount])
+  useEffect(() => {
+    setFilledStarsCount(props.filledStarsCount);
+  }, [props.filledStarsCount]);
 
   return (
     <div

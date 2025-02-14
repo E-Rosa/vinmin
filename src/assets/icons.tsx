@@ -159,15 +159,15 @@ export const vinminAddIcon = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     stroke="#000000"
-    stroke-width="1.472"
+    strokeWidth="1.472"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       stroke="#CCCCCC"
-      stroke-width="0.512"
+      strokeWidth="0.512"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <line x1="20" y1="32" x2="44" y2="32"></line>
