@@ -15,8 +15,10 @@
 
 .VinminTabActive {
   background-color: black;
+  color: white;
 }
 
 .VinminTabInactive {
   background-color: white;
+  color: black;
 }
