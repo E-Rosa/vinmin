@@ -27,7 +27,7 @@ function VinminTab(props: VinminTabProps) {
       {(props.iconActive || props.iconInactive) && (
         <>{props.isActive ? props.iconActive : props.iconInactive}</>
       )}
-      {props.text && <label>{props.text}</label>}
+      {props.text && <label className="VinminTabLabel">{props.text}</label>}
     </button>
   );
 }

@@ -9,8 +9,9 @@
   cursor: pointer;
 }
 
-.VinminTab:active, .VinminTab:hover{
-  opacity: .9;
+.VinminTab:active,
+.VinminTab:hover {
+  opacity: 0.9;
 }
 
 .VinminTabActive {
@@ -21,4 +22,8 @@
 .VinminTabInactive {
   background-color: white;
   color: black;
+}
+
+.VinminTabLabel {
+  cursor: pointer;
 }
