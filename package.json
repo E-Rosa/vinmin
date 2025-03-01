@@ -1,6 +1,6 @@
 {
   "name": "@eliasrrosa/vinmin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "access": "public",
   "main": "dist/vinmin.js",
@@ -16,6 +16,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@eliasrrosa/pagination": "^0.0.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
